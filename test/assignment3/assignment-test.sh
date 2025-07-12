@@ -14,7 +14,7 @@ if [[ -z ${SKIP_BUILD} || ${SKIP_BUILD} -eq 0 ]]; then
     ./manual-linux.sh ${OUTDIR}
 	rc=$?
 	if [ $rc -ne 0 ]; then
-		add_validate_error "manual-linux script failed with ${rc}"
+		add_validate_error "manual-linux script failed with ${rc}" 
 	fi
     popd
 fi
